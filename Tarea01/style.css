@@ -1,0 +1,125 @@
+/*Contenedor de todo los componentes*/
+.contenedor {
+    background-color: rgb(17, 68, 68);
+}
+
+/*Posicion fija del titulo y el menu*/
+.header {
+    background-color: rgb(17, 68, 68);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 110px;
+    margin: 0;
+}
+
+/*Titulo de la pagina*/
+.titulo {
+    color: rgb(190, 203, 214);
+    margin-left: 40px;
+}
+
+/*Estilo global para los titulos h2*/
+h2 {
+    //color: rgb(190, 203, 214);
+}
+
+/*Menu de secciones*/
+.menu {
+    color: rgb(190, 203, 214);
+    text-align: left;
+    font-size: 130%;
+    margin-left: 30px;
+}
+
+/*estilo global para los enlaces de secciones del menu*/
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*Secciones de navegacion del menu*/
+.s {
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/*movimiento hover sobre las secciones del menu*/
+.s:hover {
+    background-color: rgb(41, 82, 82);
+}
+
+/*movimiento de actvaciones sobre las seciones del menu*/
+.s:active {
+    background-color: rgb(17, 68, 68);
+}
+
+/*Inicio con la foto y datos de la persona*/
+.inicio {
+    color: rgb(190, 203, 214);
+    display: flex;
+    gap: 40px;
+    margin-left: 80px;
+    margin-top: 50px;
+    scroll-margin-top: 130px;
+
+    .foto {
+        margin: 10px;
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}
+
+/*Secciones con el contenido*/
+.sections {
+    margin: 50px;
+    color: rgb(190, 203, 214);
+    scroll-margin-top: 130px;
+}
+
+.section {
+    scroll-margin-top: 130px;
+}
+
+/*Tarjetas con los proyectos*/
+.proyectos {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex: 1 1 250px;
+    margin-left: 60px;
+
+    .caja {
+        border-radius: 20px;
+        width: 270px;
+        height: 290px;
+        background-color: rgb(41, 82, 82);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+        .texto {
+            text-align: center;
+        }
+
+    }
+
+    .imagen {
+        width: 80px;
+        height: 80px;
+        padding: 20px;
+        margin-left: 80px;
+    }
+
+    /*Movimiento hover sobre las tarjetas de proyectos*/
+    .caja:hover {
+        width: 272px;
+        height: 292px;
+
+        .imagen {
+            width: 82px;
+            height: 82px;
+        }
+    }
+
+}
